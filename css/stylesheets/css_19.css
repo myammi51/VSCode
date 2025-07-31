@@ -1,0 +1,167 @@
+#hello {
+    color: red;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    #hello {
+        color: blue;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #hello {
+        color: green;
+    }
+}
+
+/* 출력할 때의 색상을 설정할 수 있다고 합디다 */
+@media print {
+    #hello {
+        color: purple;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #hello {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #hello {
+        font-size: 20px;
+    }
+}
+
+#menu_div {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 550px) {
+    #menu_div {
+        flex-direction: column;
+    }
+}
+
+/* ===================================================================================== */
+/* 카카오 반응형 웹 따라 만들기 */
+/* #contents-container {
+    
+} */
+
+#contents-container-title {
+    display: flex;
+    justify-content: left;
+}
+
+#title-text {
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#bulb-img {
+   height: 48px;
+   width: 48px;
+   margin-right: 4px;
+   line-height: 35px;
+}
+
+#contents-type {
+    margin-top: 24px;
+}
+
+#contents-type > ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+#contents-type > ul > li {
+    display: flex;
+    flex: 1 1 40%;
+    box-sizing: border-box;
+    font-size: 18px;
+    letter-spacing: -.5px;
+    font-weight: bold;
+    /* width: 350px; */
+}
+
+.contents-type {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contents-list {
+    display: flex;
+    margin: 12px 0 0 12px;
+    padding: 32px 36px;
+    background-color: #f3f3f3;
+    border-radius: 24px;
+    justify-content: space-between;
+}
+
+.contents-list > span {
+    margin-top: 8px;
+}
+
+.content-items > img {
+    width: 40px;
+    height: 40px;
+    margin: 0 0 0 3px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    #contents-type > ul > li {
+        position: relative;
+        display: block;
+        width: calc(50% - 12px);
+        height: auto;
+        margin: 12px 0 0 12px;
+        padding: 20px 20px 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .content-items > img:nth-child(3) {
+        display: none;
+    }
+
+    #contents-type > ul > li {
+        position: relative;
+        display: block;
+        width: calc(50% - 12px);
+        height: auto;
+        margin: 12px 0 0 12px;
+        padding: 10px 10px ;
+    }
+
+    #bulb-img {
+        display: none;
+    }
+}
+
+#button-center-align {
+    display: flex;
+    justify-content: center;
+}
+
+#view-content-all {
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    width: 280px;
+    height: 60px;
+    border-radius: 30px;
+    text-align: justify;
+}
+
+#view-content-all > span {
+    font-size: 16px;
+    line-height: 60px;
+    cursor: pointer;
+}

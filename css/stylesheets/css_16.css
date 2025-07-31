@@ -1,0 +1,242 @@
+.flex-box {
+    display: flex;
+    background-color: skyblue;
+    padding: 5px;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.flex-box > * {
+    background-color: rgb(232, 248, 255);
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+    margin: 5px;
+}
+
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+    height: 550px;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+#mywebsite {
+    width: 1200px;
+    font-size: 35px;
+    color: white;
+}
+
+#mywebsite > header {
+    background-color: darkred;
+    height: 150px;
+}
+
+#mywebsite > nav {
+    background-color: darkslateblue;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+#mywebsite > nav > div {
+    background-color: rgb(125, 113, 204);
+    margin: 5px;
+    width: 90px;
+}
+
+#mywebsite > main {
+    display: flex;
+    height: 1000px;
+}
+
+#newsstand {
+    /* background-color: darkgray; */
+    width: 80%;
+}
+
+#newsstand > article {
+    background-color: gold;
+    height: 85%;
+}
+
+#newsstand > section {
+    background-color: darkblue;
+    height: 15%;
+}
+
+#mywebsite > main > aside {
+    background-color: darkolivegreen;
+    width: 20%;
+}
+
+#mywebsite > footer {
+    background-color: darkgoldenrod;
+    height: 100px;
+}
+/* =================================================================== */
+/* 뉴스스탠드 내부 내용 만들기(네이버 화면 참조) */
+/* =================================================================== */
+
+.newstitle > ul, .sportnewstype > ul {
+    color: rgb(158, 157, 157);
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0px;
+}
+
+.newstitle > ul > li {
+    list-style-type: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.newstitle > ul > li::before {
+    content: "/ ";
+    color: rgb(233, 233, 233);
+}
+
+#firsttitle::before {
+    content: "";
+}
+
+#selecttitle {
+    color: black;
+}
+
+.sportnewstype {
+    background-color: rgb(230, 229, 229);
+    height: 50px;
+    display: flex;
+}
+
+.sportnewstype > ul {
+    width: 85%;
+    margin: 15px;
+    margin-left: 0px;
+    color: black;
+}
+
+.sportnewstype > ul > li {
+    list-style-type: none;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.sportnewstype > ul > li::before {
+    content: "· ";
+    color: rgb(233, 233, 233);
+}
+
+#firstsporttype::before {
+    content: "";
+}
+
+#sporthome {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px;
+    color: black;
+}
+
+#sportnewssection {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.photonews {
+    width: 50%;
+    height: 400px;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.photonews > ul {
+    padding: 0px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.photonews > ul > li {
+    list-style-type: none;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.photonews > ul > li > img {
+    border-radius: 10px;
+    height: 150px;
+    width: 200px;
+}
+
+.textnews {
+    width: 50%;
+    height: 400px;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.textnews > ul {
+    list-style-type: none;
+    font-size: 15px;
+    padding: 0px;
+}
+
+.textnews > ul > li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.company {
+    font-size: 13px;
+    color: gray;
+}
+
+.commentcount {
+    color: rgb(136, 164, 255);
+    font-size: 13px;
+    border: 0.2mm solid rgb(136, 164, 255);
+    border-radius: 5px;
+    padding: 1px 3px 1px 3px;
+}
+
+#newsstand > section {
+    background-color: white;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(70, 70, 70);
+    height: 5%;
+}
+
+#highlight {
+    color: rgb(122, 122, 252);
+    font-weight: 600;
+}
+
+.fa-stack {
+    font-size: 12px;
+}
+

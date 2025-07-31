@@ -1,0 +1,75 @@
+.dialog-box {
+    padding: 3px; 
+    border: solid 3px black; 
+    width: 500px;
+}
+
+.block-test > span {
+    display: block;
+    background-color: orange;
+    border: solid 3px navy;
+    padding: 3px;
+    margin: 3px;
+    width: 100px;
+}
+
+.inline-test > span {
+    display: inline;
+    background-color: orange;
+    border: solid 3px navy;
+    padding: 15px;
+    margin: 5px;
+    width: 100px;
+}
+
+.inline-block-test > span {
+    display: inline-block;
+    background-color: orange;
+    border: solid 3px navy;
+    padding: 15px;
+    margin: 5px;
+    width: 100px;
+}
+
+#none-test, #visibility-test {
+    color: white;
+    font-size: 35px;
+    width: 500px;
+}
+
+#none-test > div, #visibility-test > div {
+    padding: 10px;
+    text-align: center;
+}
+
+#none-test > div:first-child, #visibility-test > div:first-child {
+    background-color: rosybrown;
+}
+
+#none-test > div:nth-child(2), #visibility-test > div:nth-child(2) {
+    background-color: rgb(214, 252, 144);
+}
+
+#none-test > div:nth-child(3), #visibility-test > div:nth-child(3) {
+    background-color: rgb(144, 211, 241);
+}
+
+#none-test > div:nth-child(4), #visibility-test > div:nth-child(4) {
+    background-color: rgb(218, 195, 216);
+}
+
+#none-test > .on {
+    display: block;
+}
+
+#none-test > .off {
+    display: none;
+}
+
+#visibility-test > .on {
+    visibility: visible;
+}
+
+#visibility-test > .off {
+    visibility: hidden;
+}

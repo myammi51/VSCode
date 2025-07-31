@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16_Flex.html</title>
+    <link rel="stylesheet" href="./stylesheets/css_16.css">
+    <script src="https://kit.fontawesome.com/9a5ae9cdce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <h3># display: flex</h3>
+
+    <ul>
+        <li>해당 요소의 display 속성을 flex로 변경하면 flex-box가 된다</li>
+        <li>해당 박스 내부에 있는 자식 요소들은 flex-item이 된다</li>
+        <li>flex-box는 내부 자식 요소들의 크기를 유연하게 조절해준다</li>
+    </ul>
+
+    <div class="flex-box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+    <h3># flex-direction property</h3>
+
+    <h5>* flex-direction: row</h5>
+    <div class="flex-box flex-direction-row">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h5>* flex-direction: row-reverse</h5>
+    <div class="flex-box flex-direction-row-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h5>* flex-direction: column</h5>
+    <div class="flex-box flex-direction-column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h5>* flex-direction: column-reverse</h5>
+    <div class="flex-box flex-direction-column-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h3># justify-content property (flex-box로 설정된 요소에 적용)</h3>
+
+    <ul>
+        <li>flex-start: </li>
+        <li>flex-end: </li>
+        <li>center: </li>
+        <li>space-between: </li>
+        <li>space-around: </li>
+    </ul>
+
+    <h5>justify-content: flex-start (flex-direction: row)</h5>
+    <div class="flex-box flex-direction-row" style="justify-content: flex-start;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h5>justify-content: flex-end (flex-direction: row)</h5>
+    <div class="flex-box flex-direction-row" style="justify-content: flex-end;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h5>justify-content: center (flex-direction: row)</h5>
+    <div class="flex-box flex-direction-row" style="justify-content: center;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h5>justify-content: space-between (flex-direction: row)</h5>
+    <div class="flex-box flex-direction-row" style="justify-content: space-between;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h5>justify-content: space-around (flex-direction: row)</h5>
+    <div class="flex-box flex-direction-row" style="justify-content: space-around;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h5>justify-content: space-evenly (flex-direction: row)</h5>
+    <div class="flex-box flex-direction-row" style="justify-content: space-evenly;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <hr>
+
+    <h5>justify-content: flex-start (flex-direction: column)</h5>
+    <div class="flex-box flex-direction-column" style="justify-content: flex-start;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h5>justify-content: flex-end (flex-direction: column)</h5>
+    <div class="flex-box flex-direction-column" style="justify-content: flex-end;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h5>justify-content: center (flex-direction: column)</h5>
+    <div class="flex-box flex-direction-column" style="justify-content: center;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h5>justify-content: space-between (flex-direction: column)</h5>
+    <div class="flex-box flex-direction-column" style="justify-content: space-between;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h5>justify-content: space-around (flex-direction: column)</h5>
+    <div class="flex-box flex-direction-column" style="justify-content: space-around;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h5>justify-content: space-evenly (flex-direction: column)</h5>
+    <div class="flex-box flex-direction-column" style="justify-content: space-evenly;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <!-- 얘는 높이가 필요하다고 합디다 -->
+    <h3># align-items property (flex-box로 설정된 요소에 적용)</h3>
+
+    <h5>* align-items: flex-start</h5>
+    <div class="flex-box flex-direction-row" 
+         style="
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    height: 300px;
+                ">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h5>* align-items: flex-end</h5>
+    <div class="flex-box flex-direction-row" 
+         style="
+                    justify-content: space-around;
+                    align-items: flex-end;
+                    height: 300px;
+                ">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h5>* align-items: center</h5>
+    <div class="flex-box flex-direction-row" 
+         style="
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 300px;
+                ">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <h5>* align-items: baseline (first baseline, last baseline)</h5>
+    <div class="flex-box flex-direction-row" 
+         style="
+                    justify-content: space-around;
+                    align-items: baseline;
+                    height: 300px;
+                ">
+        <!-- 각 flex-item의 높이가 다를 때 align-items: baseline이 의미를 가진다 -->
+        <div style="height: 150px; line-height: 150px;">1</div>
+        <div style="height: 100px; line-height: 100px;">2</div>
+        <div style="height: 200px; line-height: 200px;">3</div>
+        <div style="height: 50px; line-height: 50px;">4</div>
+        <div style="height: 130px; line-height: 130px;">5</div>
+    </div>
+
+    <!-- 얘가 좀 괜찮은 옵션이래요 -->
+    <h5>* align-items: stretch</h5>
+    <div class="flex-box flex-direction-row" 
+         style="
+                    justify-content: space-around;
+                    align-items: stretch;
+                    height: 300px;
+                ">
+        <!-- align-items: stretch는 flex-item의 높이가 auto일 때 의미를 지닌다 -->
+        <div style="height: auto;">1</div>
+        <div style="height: auto;">2</div>
+        <div style="height: auto;">3</div>
+        <div style="height: auto;">4</div>
+        <div style="height: auto;">5</div>
+    </div>
+
+    <h3># order property (flex-item으로 설정된 요소에 적용되는 속성)</h3>
+
+    <ul>
+        <li>flex-item들의 order 속성의 기본값은 0이다</li>
+        <li>자기보다 속성값이 크면 뒤에 나오고 작으면 앞에 나온다</li>
+    </ul>
+
+    <div class="flex-box flex-direction-row">
+        <div>1</div>
+        <div>2</div>
+        <div style="order: 1;">3</div>
+        <div style="order: -1">4</div>
+        <div>5</div>
+    </div>
+
+    <h3># align-self property (flex-item으로 설정된 요소에 적용되는 속성)</h3>
+
+    <ul>
+        <li>각 flex-item의 align 속성을 직접 설정할 수 있다</li>
+    </ul>
+
+    <div class="flex-box flex-direction-row" 
+         style="
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 300px;
+                ">
+        <div style="align-self: flex-end;">1</div>
+        <div style="order: 3">2</div>
+        <div style="align-self: flex-end; order: 2">3</div>
+        <div style="align-self: center; order: 1">4</div>
+        <div style="align-self: flex-end; order: 3">5</div>
+    </div>
+
+    <h3># flex를 활용해 사이트 레이아웃 구성하기</h3>
+
+    <div id="mywebsite">
+        <header>사이트의 헤더부분</header>
+        <nav>
+            <div>사전</div>
+            <div>웹툰</div>
+            <div>메일</div>
+            <div>카페</div>
+            <div>블로그</div>
+        </nav>
+        <main>
+            <div id="newsstand">
+                <div class="newstitle">
+                    <ul>
+                        <li id="firsttitle">뉴스스탠드 · 언론사편집</li>
+                        <li>엔터</li>
+                        <li id="selecttitle">스포츠</li>
+                        <li>경제</li>
+                        <li>쇼핑투데이</li>
+                    </ul>
+                </div>
+
+                <div class="sportnewstype">
+                    <ul>
+                        <li id="firstsporttype">야구</li>
+                        <li>해외야구</li>
+                        <li>축구</li>
+                        <li>해외축구</li>
+                        <li>농구</li>
+                        <li>배구</li>
+                        <li>N골프</li>
+                        <li>일반</li>
+                        <li>e스포츠</li>
+                        <li>아웃도어</li>
+                    </ul>
+                    <p id="sporthome">스포츠홈</p>
+                </div>
+
+                <div id="sportnewssection">
+                    <div class="photonews">
+                        <ul>
+                            <li><img src="./images/고양이짤.jpg" alt="야옹"></li>
+                            <li>
+                                '볼넷→삼진→볼넷→땅볼→<br>9회 추격의 적시타' 이정...<br>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <p class="company">마이데일리 · 57분 전</p> <p class="commentcount">16</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><img src="./images/고양이짤2.jpg" alt="야옹"></li>
+                            <li>
+                                英 언론  "LAFC, 손흥민과 영<br>입 협상 진행"... 이적 초읽...<br>
+                                <div style="display: flex; justify-content: space-between;">
+                                    <p class="company">헤럴드경제 · 21분 전</p> <p class="commentcount">46</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="textnews">
+                        <ul>
+                            <li><p>'이럴 수가' 김혜성, 99마일 강속구에 ...</p> <p class="company">엑스포츠뉴스</p><p class="commentcount">20</p></li>
+                            <li><p>동점골 터뜨린 수원FC 싸박, K리그 24...</p> <p class="company">스포츠월드</p><p class="commentcount">14</p></li>
+                            <li><p>조현주, 싱가포르 세계선수권 女 자유형 200...</p> <p class="company">OSEN</p><p class="commentcount">9</p></li>
+                            <li><p>이예원, 신설대회 오로라월드 레이디스 ...</p> <p class="company">국민일보</p><p class="commentcount">9</p></li>
+                            <li><p>3대3 여자농구 대표팀 전병준 감독 재선...</p> <p class="company">연합뉴스</p><p class="commentcount">8</p></li>
+                            <li><p>'우승후보'KCC, 외국선수 구성 완료... 'KB...</p> <p class="company">스타뉴스</p><p class="commentcount">5</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <section>
+                    <span class="fa-stack" style="vertical-align: top;">
+                        <i class="fa-regular fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-chevron-left fa-stack-1x"></i>
+                    </span>
+                    <span id="highlight">스포츠 소식</span> 더보기 1<span style="color: rgb(214, 214, 214);">/3</span>
+                    <span class="fa-stack" style="vertical-align: top;">
+                        <i class="fa-regular fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-chevron-right fa-stack-1x"></i>
+                    </span>
+                </section>
+            </div>
+            <aside>사이드 메뉴</aside>
+        </main>
+        <footer>사이트 아랫 부분</footer>
+    </div>
+</body>
+</html>

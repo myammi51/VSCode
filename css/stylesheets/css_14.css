@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+.article {
+    border: solid 3px black;
+    padding: 10px;
+}
+
+.article-img {
+    width: 300px;
+    height: auto;
+}
+
+.float-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 10px;
+}
+
+#float-box1 {
+    border: 1px solid black;
+}
+
+#float-box1 > img {
+    width: 300px;
+    height: auto;
+    border: 1px solid black;
+}
+
+#float-image1 {
+    float: left;
+}
+
+#float-image2 {
+    float: left;
+}
+
+#float-image3 {
+    float: left;
+}
+
+/* 크기 고정을 원한다면 100%말고 원하는 px값을 넣으면 된다고 합디다 */
+#float-box2 {
+    width: 100%;
+    margin: auto;
+}
+
+#float-box2 > div {
+    float: left;
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#float-box2 > div:first-child {
+    background-color: salmon;
+    height: 150px;
+    width: 100%;
+    line-height: 150px;
+}
+
+#float-box2 > div:nth-child(2) {
+    background-color: linen;
+    height: 500px;
+    width: 15%;
+    line-height: 500px;
+}
+
+#float-box2 > div:nth-child(3) {
+    background-color: peru;
+    height: 500px;
+    width: 70%;
+    line-height: 500px;
+}
+
+#float-box2 > div:nth-child(4) {
+    background-color: darkcyan;
+    height: 500px;
+    width: 15%;
+    line-height: 500px;
+}
+
+#float-box2 > div:nth-child(5) {
+    background-color: cornflowerblue;
+    height: 150px;
+    width: 100%;
+    line-height: 150px;
+}
+
+/* float을 clear하기 위해 ::after 가상요소를 사용할 수 있다 */
+#float-box2::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+/* ==================================================================================== */
+/* 연습문제 */
+#layout {
+    width: 400px;
+    height: 800px;
+}
+
+.event {
+    height: auto;
+    width: max-content;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-align: center;
+    margin: 3px 3px 0 3px;
+    color: gray;
+    padding: 3px;
+}
+
+.activate {
+    height: auto;
+    width: max-content;
+    border: solid 1px rgb(105, 105, 255);
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(105, 105, 255);
+}
+
+.blankDiv {
+    height: 20px;
+    width: 400px;
+}
+
+#firstBlankDiv {
+    height: 100px;
+    width: 400px;
+}
+
+#discountPercent {
+    color: rgb(121, 226, 121);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#afterPrice {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#afterPrice::after {
+    font-weight: normal;
+    content: "원";
+}
+
+#beforePrice {
+    height: 30px;
+    margin-top: 4%;
+    color: gray;
+}
+
+.expalin {
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+}
+
+/* .rightMarginDiv {
+    width: 200px;
+    height: 15px;
+} */
+
+#point {
+    font-weight: bold;
+    color: rgb(121, 226, 121);
+    font-size: 15px;
+}
+
+#todayDelivery {
+    height: auto;
+    width: max-content;
+    /* border: solid 1px rgb(105, 105, 255); */
+    font-size: 13px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 3px;
+    color: rgb(122, 122, 255);
+    background-color: rgb(223, 223, 248);
+    padding: 0 5px 0 5px;
+}
+
+#freeShipping, #deliveryDate {
+    font-weight: bold;
+}
+
+#deliveryStandard {
+    font-weight: 300;
+}
+
+#login {
+    text-decoration: underline;
+    color: rgb(121, 226, 121);
+}
+
+#alarm {
+    height: auto;
+    width: max-content;
+    border: solid 1px rgb(105, 105, 255);
+    font-size: 17px;
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(105, 105, 255);
+}
+
+/* ==================================================================================== */
+/* 강사님 풀이*/
+#book_info {
+    width: 330px;
+    background-color: linen;
+}
+
+#book_info > div {
+    float: left;
+}
+
+.badge_list_box {
+    width: 100%;
+    line-height: 1.6em;
+    user-select: none;
+}
+
+.badge_list_box > b {
+    font-weight: 400;
+    font-size: 0.8em;
+    border: solid 1px black;
+    padding: 1px 3px;
+    border-radius: 4px;
+}
+
+.badge_list_box > b.badge_line_navy {
+    color: slateblue;
+    border-color: slateblue;
+}
+
+.badge_list_box > b.badge_line_gray {
+    color: gray;
+    border-color: gray;
+}
+
+.price_box {
+    width: 100%;
+    margin-top: 30px;
+    word-spacing: 0.3em;
+}
+
+.price_box > b.percent {
+    color: rgb(77, 172, 39);
+    font-size: 1.4em;
+}
+
+.price_box > b.sale_price {
+    font-size: 1.4em;
+}
+
+.price_box > b.price {
+    color: gray;
+    text-decoration: line-through;
+    font-weight: 400;
+    font-size: 0.8em;
+    margin-left: -5px;
+}
+
+.point_box {
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.point_box > .point_label {
+    float: left;
+}
+
+.point_box > .point_text {
+    float: right;
+}
+
+.point_box > .point_text > b {
+    color: rgb(77, 172, 39);
+    margin-right: 5px;
+}
+
+.point_box > .point_text > img {
+    height: 1.2em;
+    vertical-align: -3px;
+}
+
+.point_box::after {
+    display: block;
+    clear: both;
+    content: "";
+}
