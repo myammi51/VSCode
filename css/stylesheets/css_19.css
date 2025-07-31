@@ -81,13 +81,13 @@
 }
 
 #contents-type > ul > li {
-    display: flex;
-    flex: 1 1 40%;
+    /* display: flex;
+    flex: 1 1 40%; */
     box-sizing: border-box;
     font-size: 18px;
     letter-spacing: -.5px;
     font-weight: bold;
-    /* width: 350px; */
+    width: 400px;
 }
 
 .contents-type {
@@ -117,6 +117,8 @@
 
 @media screen and (max-width: 1200px) {
     #contents-type > ul > li {
+        display: flex;
+        flex: 1 1 40%;
         position: relative;
         display: block;
         width: calc(50% - 12px);
