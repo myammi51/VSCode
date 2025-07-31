@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_반복문.html</title>
+</head>
+<body>
+    
+    <h3># 자바스크립트에도 for문과 while문이 있다</h3>
+
+    <script>
+        // let, const가 아니면 변수의 scope 개념이 없다
+        // for문의 밖에서도 i의 값이 보임
+        for (i = 0; i < 10; ++i) {
+            console.log('i: ', i);
+        }
+
+        console.log(i);
+
+        i = 0;
+        while (i < 10) {
+            console.log('while:', i++);
+        }
+
+        // while (true) {
+        //     console.log(i++);
+        //     if (i > 10000) {
+        //         break;
+        //     }
+        // }
+        
+        // while(1)도 무한루프가 된다 (true 대신 아무 숫자나 사용 가능)
+        // 0은 false로 취급된다
+        while (1) {
+            console.log(i++);
+            if (i > 10000) {
+                break;
+            }
+        }
+
+        // 반복문으로 배열 활용하기
+        const dayOfWeek = ['Mon', 'Tue', 'Wed', 'Thu'];
+
+        // 정석적인 방법
+        for (index = 0; index < dayOfWeek.length; ++index) {
+            console.log(dayOfWeek[index]);
+        }
+
+        // for ... of로 배열을 편리하게 탐색할 수 있다
+        for (dow of dayOfWeek) {
+            console.log('dow:', dow);
+        }
+
+        // 반복문으로 오브젝트 활용하기
+        const settings = {
+            bg_color: 'red',
+            sound: 35,
+            language: '한국어',
+            screen_mode: '창모드',
+        };
+
+        // for ... in으로 오브젝트 데이터를 쉽게 탐색할 수 있다
+        for (key in settings) {
+            console.log(key, ":", settings[key]);
+        }
+    </script>
+</body>
+</html>
