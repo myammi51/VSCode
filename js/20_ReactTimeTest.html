@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Time Test</title>
+    <link rel="stylesheet" href="./assets/css/react_test.css">
+</head>
+<body>
+    
+    <div>
+        <h1>반응속도 테스트 - 프로게이머 평균 150ms</h1>
+        <div id="progress-bar">
+            <div id="progress-text">0 / 5</div>
+            <div id="progress"></div>
+        </div>
+        
+    </div>
+    <div id="main">
+        <div></div>
+    </div>
+
+    <div id="test-wait">
+        <div class="wait-message">
+            <div class="text">Wait...</div>
+            <div class="icon"></div>
+        </div>
+    </div>
+
+    <div id="test-wait-click">
+        <div class="wait-message">
+            <div class="text">Click!</div>
+            <div class="icon"></div>
+        </div>
+    </div>
+
+    <div id="test-clicked">
+        <div class="label">Your reaction time:</div>
+        <div class="record">
+            <div class="icon"></div>
+            <div class="millisec">300 ms</div>
+        </div>
+    </div>
+
+    <div id="test-record">
+        <div class="title">
+            <div class="icon"></div>
+            <div class="title-text">Final Results</div>
+            <div class="icon"></div>
+        </div>
+        <div class="records">
+            <div class="avg-time">
+                <div class="label">Average time:</div>
+                <div class="icon"></div>
+                <div class="millisec">300 ms</div>
+            </div>
+            <div class="best-time">
+                <div class="label">Best time:</div>
+                <div class="icon"></div>
+                <div class="millisec">277 ms</div>
+            </div>
+            <div class="worst-time">
+                <div class="label">Worst time:</div>
+                <div class="icon"></div>
+                <div class="millisec">333 ms</div>
+            </div>
+        </div>
+        <div class="try-again-button">
+            Try Again
+        </div>
+    </div>
+
+    <script src="./assets/js/react_test.js"></script>
+</body>
+</html>
